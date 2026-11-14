@@ -1,0 +1,199 @@
+﻿namespace PubsApp;
+
+partial class FrmStores
+{
+    private System.ComponentModel.IContainer components = null;
+
+    protected override void Dispose(bool disposing)
+    {
+        if (disposing && (components != null))
+        {
+            components.Dispose();
+        }
+        base.Dispose(disposing);
+    }
+
+    private void InitializeComponent()
+    {
+        pnlBotones = new Panel();
+        btnNuevo = new Button();
+        btnGuardar = new Button();
+        btnEliminar = new Button();
+        btnRecargar = new Button();
+        grpDatos = new GroupBox();
+        lblId = new Label();
+        lblName = new Label();
+        lblAddress = new Label();
+        lblCity = new Label();
+        lblState = new Label();
+        lblZip = new Label();
+        txtId = new TextBox();
+        txtName = new TextBox();
+        txtAddress = new TextBox();
+        txtCity = new TextBox();
+        txtState = new TextBox();
+        txtZip = new TextBox();
+        dgv = new DataGridView();
+        pnlBotones.SuspendLayout();
+        grpDatos.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)dgv).BeginInit();
+        SuspendLayout();
+        // pnlBotones
+        pnlBotones.Controls.Add(btnNuevo);
+        pnlBotones.Controls.Add(btnGuardar);
+        pnlBotones.Controls.Add(btnEliminar);
+        pnlBotones.Controls.Add(btnRecargar);
+        pnlBotones.Dock = DockStyle.Top;
+        pnlBotones.Name = "pnlBotones";
+        pnlBotones.Size = new Size(940, 55);
+        // btnNuevo
+        btnNuevo.Location = new Point(15, 10);
+        btnNuevo.Name = "btnNuevo";
+        btnNuevo.Size = new Size(110, 36);
+        btnNuevo.Text = "Nuevo";
+        btnNuevo.UseVisualStyleBackColor = true;
+        btnNuevo.Click += btnNuevo_Click;
+        // btnGuardar
+        btnGuardar.Location = new Point(135, 10);
+        btnGuardar.Name = "btnGuardar";
+        btnGuardar.Size = new Size(110, 36);
+        btnGuardar.Text = "Guardar";
+        btnGuardar.UseVisualStyleBackColor = true;
+        btnGuardar.Click += btnGuardar_Click;
+        // btnEliminar
+        btnEliminar.Location = new Point(255, 10);
+        btnEliminar.Name = "btnEliminar";
+        btnEliminar.Size = new Size(110, 36);
+        btnEliminar.Text = "Eliminar";
+        btnEliminar.UseVisualStyleBackColor = true;
+        btnEliminar.Click += btnEliminar_Click;
+        // btnRecargar
+        btnRecargar.Location = new Point(375, 10);
+        btnRecargar.Name = "btnRecargar";
+        btnRecargar.Size = new Size(110, 36);
+        btnRecargar.Text = "Recargar";
+        btnRecargar.UseVisualStyleBackColor = true;
+        btnRecargar.Click += btnRecargar_Click;
+        // grpDatos
+        grpDatos.Controls.Add(lblId);
+        grpDatos.Controls.Add(lblName);
+        grpDatos.Controls.Add(lblAddress);
+        grpDatos.Controls.Add(lblCity);
+        grpDatos.Controls.Add(lblState);
+        grpDatos.Controls.Add(lblZip);
+        grpDatos.Controls.Add(txtId);
+        grpDatos.Controls.Add(txtName);
+        grpDatos.Controls.Add(txtAddress);
+        grpDatos.Controls.Add(txtCity);
+        grpDatos.Controls.Add(txtState);
+        grpDatos.Controls.Add(txtZip);
+        grpDatos.Dock = DockStyle.Bottom;
+        grpDatos.Name = "grpDatos";
+        grpDatos.Size = new Size(940, 160);
+        grpDatos.TabStop = false;
+        grpDatos.Text = "Datos de la tienda";
+        // labels
+        lblId.AutoSize = true;
+        lblId.Location = new Point(15, 28);
+        lblId.Name = "lblId";
+        lblId.Text = "stor_id";
+        lblName.AutoSize = true;
+        lblName.Location = new Point(190, 28);
+        lblName.Name = "lblName";
+        lblName.Text = "stor_name";
+        lblAddress.AutoSize = true;
+        lblAddress.Location = new Point(365, 28);
+        lblAddress.Name = "lblAddress";
+        lblAddress.Text = "stor_address";
+        lblCity.AutoSize = true;
+        lblCity.Location = new Point(15, 88);
+        lblCity.Name = "lblCity";
+        lblCity.Text = "city";
+        lblState.AutoSize = true;
+        lblState.Location = new Point(190, 88);
+        lblState.Name = "lblState";
+        lblState.Text = "state";
+        lblZip.AutoSize = true;
+        lblZip.Location = new Point(365, 88);
+        lblZip.Name = "lblZip";
+        lblZip.Text = "zip";
+        // textboxes
+        txtId.Location = new Point(15, 48);
+        txtId.MaxLength = 4;
+        txtId.Name = "txtId";
+        txtId.Size = new Size(160, 23);
+        txtId.TabIndex = 0;
+        txtName.Location = new Point(190, 48);
+        txtName.MaxLength = 40;
+        txtName.Name = "txtName";
+        txtName.Size = new Size(160, 23);
+        txtName.TabIndex = 1;
+        txtAddress.Location = new Point(365, 48);
+        txtAddress.MaxLength = 40;
+        txtAddress.Name = "txtAddress";
+        txtAddress.Size = new Size(160, 23);
+        txtAddress.TabIndex = 2;
+        txtCity.Location = new Point(15, 108);
+        txtCity.MaxLength = 20;
+        txtCity.Name = "txtCity";
+        txtCity.Size = new Size(160, 23);
+        txtCity.TabIndex = 3;
+        txtState.Location = new Point(190, 108);
+        txtState.MaxLength = 2;
+        txtState.Name = "txtState";
+        txtState.Size = new Size(160, 23);
+        txtState.TabIndex = 4;
+        txtZip.Location = new Point(365, 108);
+        txtZip.MaxLength = 5;
+        txtZip.Name = "txtZip";
+        txtZip.Size = new Size(160, 23);
+        txtZip.TabIndex = 5;
+        // dgv
+        dgv.AllowUserToAddRows = false;
+        dgv.AllowUserToDeleteRows = false;
+        dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        dgv.Dock = DockStyle.Fill;
+        dgv.Name = "dgv";
+        dgv.ReadOnly = true;
+        dgv.RowHeadersVisible = false;
+        dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+        dgv.SelectionChanged += dgv_SelectionChanged;
+        // FrmStores
+        AutoScaleDimensions = new SizeF(7F, 15F);
+        AutoScaleMode = AutoScaleMode.Font;
+        ClientSize = new Size(940, 600);
+        Controls.Add(dgv);
+        Controls.Add(grpDatos);
+        Controls.Add(pnlBotones);
+        MinimumSize = new Size(760, 450);
+        Name = "FrmStores";
+        StartPosition = FormStartPosition.CenterScreen;
+        Text = "Tabla: stores";
+        Load += FrmStores_Load;
+        pnlBotones.ResumeLayout(false);
+        grpDatos.ResumeLayout(false);
+        grpDatos.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)dgv).EndInit();
+        ResumeLayout(false);
+    }
+
+    private Panel pnlBotones;
+    private Button btnNuevo;
+    private Button btnGuardar;
+    private Button btnEliminar;
+    private Button btnRecargar;
+    private GroupBox grpDatos;
+    private Label lblId;
+    private Label lblName;
+    private Label lblAddress;
+    private Label lblCity;
+    private Label lblState;
+    private Label lblZip;
+    private TextBox txtId;
+    private TextBox txtName;
+    private TextBox txtAddress;
+    private TextBox txtCity;
+    private TextBox txtState;
+    private TextBox txtZip;
+    private DataGridView dgv;
+}
